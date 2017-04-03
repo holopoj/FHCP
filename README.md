@@ -83,3 +83,26 @@ While this listing is useful, it does not account for the fact that certain ingr
 ```
 
 Much more interesting.  The pairs make sense, yeast needs warm water to be activated, and many of the pairs reflect common regional pairings.
+
+# Usage
+The algorithm has four parameters:
+<dl>
+  <dt>theta</dt>
+  <dd>The minimum Phi correlation that two items should have between their transaction sets. (e.g., 0.3)</dd>
+  
+  <dt>tau</dt>
+  <dd>False negative tolerance.  Allow no more than this fraction of false negatives. (e.g., 0.05 means 5%)</dd>
+  
+  <dt>minsup</dt>
+  <dd>The minimum number of transactions two items must occur in together to be considered correlated. (e.g., 10)</dd>
+  
+  <dt>k</dt>
+  <dd>Number simultaneous minhashes needed to match.  For large numbers of unique items such as in the recipe dataset, k=1 is okay.  For many transactions and small number of unique item types, large k values may be reasonable.</dd>
+</dl>
+
+
+Everything is implemented in `FHCP.java`, which has a `main()` method that takes in the data file name:
+
+`java -classpath . FHCP kaggle_whats_cookin.txt`
+
+A great library for frequent itemset mining is [SPMF](http://www.philippe-fournier-viger.com/spmf/).
