@@ -11,6 +11,8 @@ The input are many transactions (aka baskets), each of which is a set of items. 
 
 Here are pairs of ingredients sorted only by the number of ingredients they occur in together.  
 
+          ingredient1          ingredient2 freq
+ ----------------------------------------------
                  salt               onions 4392
                  salt            olive_oil 4180
                  salt                water 3960
