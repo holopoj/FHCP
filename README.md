@@ -40,4 +40,40 @@ Here are pairs of ingredients sorted only by the number of ingredients they occu
   ground_black_pepper            olive_oil 1520
   ```
 
-While this listing is useful, it does not account for the fact that certain ingredients are more common than others and will therefore occur with many other ingredients purely because they are both frequent. That's why "salt" shows up so often.
+While this listing is useful, it does not account for the fact that certain ingredients are more common than others and will therefore occur with many other ingredients purely because they are both frequent. That's why "salt" shows up so often.  Let's use the FHCP algorithm to find only pairs of ingredients that occur together at least ten times, and whose phi coefficient is at least 0.3:
+
+```
+        ingredient1           ingredient2   Phi
+ ==============================================
+      green_cardamom       brown_cardamom : 0.460
+          warm_water     active_dry_yeast : 0.453
+              pastry     single_crust_pie : 0.450
+       garlic_powder         onion_powder : 0.436
+           soy_sauce           sesame_oil : 0.431
+               mirin                 sake : 0.409
+          buttermilk          baking_soda : 0.408
+              wasabi          nori_sheets : 0.405
+  kaffir_lime_leaves             galangal : 0.393
+      green_cardamom          shahi_jeera : 0.385
+        garlic_paste         ginger_paste : 0.379
+       baking_powder          baking_soda : 0.368
+          lemongrass             galangal : 0.367
+       baking_powder    all-purpose_flour : 0.364
+     cinnamon_sticks                clove : 0.348
+ dried_bonito_flakes                konbu : 0.341
+          warm_water            dry_yeast : 0.337
+        ground_cumin     ground_coriander : 0.336
+          cumin_seed      coriander_seeds : 0.329
+        garam_masala     coriander_powder : 0.328
+          mascarpone          ladyfingers : 0.321
+               konbu        bonito_flakes : 0.319
+        garlic_paste     coriander_powder : 0.307
+          cumin_seed      ground_turmeric : 0.306
+        garam_masala      ground_turmeric : 0.305
+        rice_noodles          beansprouts : 0.304
+     light_soy_sauce       dark_soy_sauce : 0.301
+          lemongrass   kaffir_lime_leaves : 0.301
+     ground_turmeric     coriander_powder : 0.301
+```
+
+Much more interesting.  The pairs make sense, yeast needs warm water to be activated, and many of the pairs reflect common regional pairings.
