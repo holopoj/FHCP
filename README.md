@@ -15,7 +15,7 @@ eggs pepper salt mayonaise cooking_oil green_chilies grilled_chicken_breasts gar
 ...
 ```
 
-Here are pairs of ingredients sorted only by the number of ingredients they occur in together.  
+Here are pairs of ingredients sorted only by the number of recipes they occur in together.  
 ```
           ingredient1          ingredient2 freq
  ==============================================
