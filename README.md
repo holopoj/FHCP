@@ -7,12 +7,11 @@ The only dependency is [Guava](https://github.com/google/guava).
 Licensed under the Apache 2.0 License.
 
 
-The input are many transactions (aka baskets), each of which is a set of items.  This algorithm will efficiently find items that tend to occur together in the same transactions.  Technically, this is finding all pairs of items whose phi coefficient [Wikipedia](https://en.wikipedia.org/wiki/Phi_coefficient) is above a specified threshold.  This correlation is measured on the sets of transactions the two items occur in.  These transactions can be any sets, such as baskets of products a user purchased or words in documents.  This project provides sets of ingredients used by recipes, extracted from the Kaggle [What's Cooking](https://www.kaggle.com/c/whats-cooking) dataset in the file kaggle_whats_cookin.txt.  That data looks like this:
+The input are many transactions (aka baskets), each of which is a set of items.  This algorithm will efficiently find items that tend to occur together in the same transactions.  Technically, this is finding all pairs of items whose phi coefficient [Wikipedia](https://en.wikipedia.org/wiki/Phi_coefficient) is above a specified threshold.  This correlation is measured on the sets of transactions the two items occur in.  These transactions can be any sets, such as baskets of products a user purchased or words in documents.  This project provides sets of ingredients used by recipes, extracted from the Kaggle [What's Cooking](https://www.kaggle.com/c/whats-cooking) dataset in the file kaggle_whats_cookin.txt.  That data has one listing of ingredient per line and looks like this:
 
 ```romaine_lettuce black_olives grape_tomatoes garlic pepper purple_onion seasoning garbanzo_beans feta_cheese_crumbles
 plain_flour ground_pepper salt tomatoes ground_black_pepper thyme eggs green_tomatoes yellow_corn_meal milk vegetable_oil
 eggs pepper salt mayonaise cooking_oil green_chilies grilled_chicken_breasts garlic_powder yellow_onion soy_sauce butter chicken_livers
-
 ...
 ```
 
