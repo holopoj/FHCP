@@ -43,6 +43,7 @@ public class FHCP {
     this.tau = tau;
     this.k = k;
     this.minsup = minsup;
+    this.t = (int) Math.ceil(Math.log(tau) / Math.log(1-Math.pow(theta, 2 * k)));
   }
 
   /** Default values probably won't work well for your dataset, but sometimes you just don't want to think about it. */
