@@ -84,6 +84,8 @@ While this listing is useful, it does not account for the fact that certain ingr
 
 Much more interesting.  The pairs make sense, yeast needs warm water to be activated, and many of the pairs reflect common regional pairings.
 
+While the phi coefficient is a good measure of associativity, and it is equal to Pearson correlation for binary data, is proportional to the Chi square test, and relates to Jaccard similarity, it isn't the only one.  There are other measures of associativity on 2x2 contingency tables, such as Fisher's eact test and the g-score.  The algorithm implemented here uses Minhashes to find items whose transaction sets have high Jaccard similarity in a first pass.  Then the phi coefficient is calculated in a second pass.  This second pass could easily be replaced by one that caclulated an alternative associativity measure.
+
 # Usage
 The algorithm has four parameters:
 <dl>
