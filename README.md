@@ -107,4 +107,4 @@ Everything is implemented in `FHCP.java`, which has a `main()` method that takes
 
 `java -classpath . FHCP kaggle_whats_cookin.txt`
 
-A great library for frequent itemset mining is [SPMF](http://www.philippe-fournier-viger.com/spmf/).
+A related concept is frequent itemset mining, for which there is a great Java library called [SPMF](http://www.philippe-fournier-viger.com/spmf/).
